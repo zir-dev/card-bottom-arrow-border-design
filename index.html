@@ -1,0 +1,40 @@
+<!-- bottom arrow border design (Card)** -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>	
+			body {
+				box-sizing: border-box;
+				margin: 50px;
+			}
+
+			.bottom-arrow {
+			  border-bottom: 5px solid #4252cf;
+			}
+
+			.bottom-arrow::after {
+			    content: "";
+			    position: absolute;
+			    left: 100px;
+			    top: 55px;
+			    margin: 0 auto;
+			    width: 0;
+			    height: 0;
+			    border-top: 65px solid #4252cf;
+			    border-left: 75px solid transparent;
+			    border-right: 75px solid transparent;
+			    transform: translateX(95%);
+		    }
+			</style>
+</head>
+<body>
+	
+	<div class="bottom-arrow"></div>
+
+</body>
+</html>
